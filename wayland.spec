@@ -1,11 +1,11 @@
 Summary:	Compositor protocol
 Name:		wayland
-Version:	1.4.0
+Version:	1.6.0
 Release:	1
 License:	MIT
 Group:		Libraries
 Source0:	http://wayland.freedesktop.org/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	332cf9191837be12638a29265ed7cf46
+# Source0-md5:	d34c141c975084e4fb668e77b38f840e
 URL:		http://wayland.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -78,7 +78,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libwayland*.so
 %{_includedir}/wayland-*.h
 %{_datadir}/wayland
-%{_npkgconfigdir}/*.pc
 %{_pkgconfigdir}/*.pc
 %{_aclocaldir}/wayland-scanner.m4
 
